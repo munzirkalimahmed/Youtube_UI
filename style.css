@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.header .search-bar {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.header .icons {
+  font-size: 20px;
+}
+
+.suggestion{
+  position: sticky;
+  flex: 1;
+    padding-left: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 20px;
+    
+}
+
+.suggestion .link1 {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin: 12px 12px;
+  
+
+  
+}
+.suggestion .link2 {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  margin: 10px 10px;
+  
+
+  
+}
+
+
+
+
+
+
+@media (min-width: 769px) {
+
+  .sidebar {  
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      overflow-y: scroll;
+      transition: left 0.3s;
+      z-index: 99;
+  }
+  .sidebar.open {
+      left: 0;
+  }
+
+  .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .content {
+      margin-left: 0;
+      padding: 20px;
+      display: flex;
+  }
+ 
+
+ 
+.video-card {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; /* Added to hide overflow content */
+  }
+
+  .video-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      flex: 1; /* Added to make the image cover half of the card */
+  }
+
+  .video-description {
+      color: #555;
+      margin-top: 10px;
+  }
+
+  .video-stats {
+      color: #777;
+      margin-top: 5px;
+  }
+  
+  .header .icons{
+    margin-right: 30px;
+    
+  }
+
+ 
+
+  
+}
+
+/* Sidebar styles for screens 768px and narrower */
+@media (max-width: 768px) {
+  
+
+  .sidebar {  
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      overflow-y: scroll;
+      transition: left 0.3s;
+      z-index: 99;
+  }
+  .sidebar.open {
+      left: 0;
+  }
+
+  .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .content {
+      margin-left: 0;
+      padding: 20px;
+  }
+
+  .header button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 15px;
+      cursor: pointer;
+  }
+  
+
+  .header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.header .search-bar {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.header .icons {
+  font-size: 20px;
+  
+  
+  
+}
+.video-card {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; 
+  }
+
+  .video-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      flex: 1; 
+  }
+
+  .video-description {
+      color: #555;
+      margin-top: 10px;
+  }
+
+  .video-stats {
+      color: #777;
+      margin-top: 5px;
+  }
+
+  @media (max-width: 1000px) {
+    .suggestion{
+      position: sticky;
+      flex: 1;
+        padding: 3px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        
+    }
+    
+    .suggestion .link1 {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 4px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      
+    
+      
+    }
+    .suggestion .link2 {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 5px;
+      overflow: hidden;
+      text-decoration: none;
+      color: black;
+      
+    
+      
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .suggestion{
+    position: sticky;
+    flex: 1;
+      padding-left: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      
+  }
+  
+  .suggestion .link1 {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin: 5px 5px;
+    
+  
+    
+  }
+  .suggestion .link2 {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    margin: 2px 2px;
+    
+  
+    
+  }
+}
+
+@media (max-width: 1000px) {
+  .suggestion{
+    position: sticky;
+    flex: 1;
+      padding: 3px;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      
+  }
+  
+  .suggestion .link1 {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    
+  
+    
+  }
+  .suggestion .link2 {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    
+  
+    
+  }
+}
+
